@@ -23,11 +23,11 @@ st.title('Iris: Flower Classification & Prediction')
 image = Image.open('iris-flower.png')
 st.image(image)
 
-readme = st.checkbox("readme first")
+readme = st.checkbox("README First")
 
 if readme:
 
-    st.write("""
+    st.sunheader.write("""
         This is a web app demo using [streamlit](https://streamlit.io/) library. It is hosted on [Streamlit](https://streamlit.io/). You may get the codes via [github](https://github.com/Tsuen86/iris-classification/)
         """)
 
