@@ -28,7 +28,7 @@ readme = st.checkbox("README First")
 if readme:
 
     st.write("""
-        This is a web app demo using [streamlit](https://streamlit.io/) library. It is hosted on [Streamlit](https://streamlit.io/). You may get the codes via [github](https://github.com/Tsuen86/iris-classification/)
+        This is a web app demo is hosted on [Streamlit](https://streamlit.io/) and uses [Streamlit](https://streamlit.io/) libraries. You may get the codes via [github](https://github.com/Tsuen86/iris-classification/)
         """)
 
 st.sidebar.write("""
