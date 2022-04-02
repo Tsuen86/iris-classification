@@ -30,7 +30,7 @@ if readme:
     st.write("""
         This is a web app demo is hosted on [Streamlit](https://streamlit.io/) and uses [Streamlit](https://streamlit.io/) libraries. You may get the codes via [Github](https://github.com/Tsuen86/iris-classification/)
         """)
-    st.write("* logistic regression model")
+    st.write("* logistic regression model","* logistic regression model")
 
 st.sidebar.write("""
 This is a web app to predict the probably species of Iris flower based on its sepal and petal dimensions (length, width)
