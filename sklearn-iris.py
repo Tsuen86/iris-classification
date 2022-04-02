@@ -28,8 +28,7 @@ readme = st.checkbox("README First")
 if readme:
 
     st.write("""
-        Critical information for this web app demo are shown below:"""
-    """* Scikit Learn Model: Logistic Regression""")
+        Critical information for this web app demo are shown below:\n * Scikit Learn Model: Logistic Regression""")
     st.write("* Host & Libraries: [Streamlit](https://streamlit.io/)")
     st.write("* Code Repository: [Github](https://github.com/Tsuen86/iris-classification/")
 
