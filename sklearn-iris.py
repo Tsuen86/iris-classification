@@ -29,7 +29,7 @@ if readme:
 
     st.write("""
         Critical information for this web app demo are shown below:
-        \n * Scikit Learn Model: Logistic Regression
+        \n * Scikit Learn Model: [Logistic Regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
         \n * Host & Libraries: [Streamlit](https://streamlit.io/)
         \n * Code Repository: [Github](https://github.com/Tsuen86/iris-classification/)
         """)
