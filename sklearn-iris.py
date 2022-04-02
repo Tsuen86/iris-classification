@@ -20,8 +20,8 @@ from PIL import Image
 
 
 st.title('Iris: Flower Classification & Prediction')
-image = Image.open('image.png')
-st.image(image, use_column_width=True,format='PNG')
+image = Image.open('iris-flower.png')
+st.image(image)
 
 st.sidebar.write("""
 This is a web app to predict the probably species of Iris flower based on its sepal and petal width
