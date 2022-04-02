@@ -30,17 +30,18 @@ if readme:
     st.write("""
         This is a web app demo is hosted on [Streamlit](https://streamlit.io/) and uses [Streamlit](https://streamlit.io/) libraries. You may get the codes via [Github](https://github.com/Tsuen86/iris-classification/)
         """)
+    st.write("* logistic regression model")
 
 st.sidebar.write("""
-This is a web app to predict the probably species of Iris flower based on its sepal and petal width
+This is a web app to predict the probably species of Iris flower based on its sepal and petal dimensions (length, width)
 """)
 
 st.sidebar.write("Please adjust slider values, to get Iris class prediction")
 
-SepalLengthCm = st.sidebar.slider('SepalLengthCm:', 2.0, 8.0)
-SepalWidthCm = st.sidebar.slider('SepalWidthCm:', 0.0, 5.0)
-PetalLengthCm = st.sidebar.slider('PetalLengthCm',0.0, 7.0)
-PetalWidthCm = st.sidebar.slider('PetalWidthCm:', 0.0, 2.5)
+SepalLengthCm = st.sidebar.slider('Sepal Length (cm):', 2.0, 8.0)
+SepalWidthCm = st.sidebar.slider('Sepal Width (cm):', 0.0, 5.0)
+PetalLengthCm = st.sidebar.slider('Petal Length (cm)',0.0, 7.0)
+PetalWidthCm = st.sidebar.slider('Petal Width (cm):', 0.0, 2.5)
 data = {'SepalLengthCm': SepalLengthCm,
         'SepalWidthCm': SepalWidthCm,
         'PetalLengthCm': PetalLengthCm,
