@@ -30,8 +30,8 @@ if readme:
     st.write("""
         This is a web app demo is hosted on [Streamlit](https://streamlit.io/) and uses [Streamlit](https://streamlit.io/) libraries. You may get the codes via [Github](https://github.com/Tsuen86/iris-classification/)
         """)
-    st.write("* Scikit Learn Model: Logistic Regression")
-    st.write("** Host & Libraries: [Streamlit](https://streamlit.io/)")
+    st.write("* Scikit Learn Model: Logistic Regression"
+        "- Host & Libraries: [Streamlit](https://streamlit.io/)")
     st.write("* Host & Libraries: [Streamlit](https://streamlit.io/)")
 
 st.sidebar.write("""
