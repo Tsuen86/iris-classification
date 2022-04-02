@@ -38,7 +38,7 @@ st.sidebar.write("""
 This is a web app to predict the class species of an Iris flower based on its sepal and petal dimensions (length, width)
 """)
 
-st.sidebar.write("Please adjust slider values, to get Iris class prediction")
+st.sidebar.write("Please adjust slider values, to get Class Prediction %")
 
 SepalLengthCm = st.sidebar.slider('Sepal Length (cm):', 2.0, 8.0)
 SepalWidthCm = st.sidebar.slider('Sepal Width (cm):', 0.0, 5.0)
@@ -53,7 +53,7 @@ features = pd.DataFrame(data, index=[0])
 
 pred_proba = model.predict_proba(features)
 
-st.subheader('Prediction Percentages:') 
+st.subheader('Class Prediction Percentages:') 
 st.write('**Probablity of Iris Class being Iris-setosa is ( in % )**:',pred_proba[0][0]*100)
 st.write('**Probablity of Isis Class being Iris-versicolor is ( in % )**:',pred_proba[0][1]*100)
 st.write('**Probablity of Isis Class being Iris-virginica ( in % )**:',pred_proba[0][2]*100)
