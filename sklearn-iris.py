@@ -19,11 +19,17 @@ from PIL import Image
 import pickle
 model = pickle.load(open('IRIS-model.pkl', 'rb'))
 
-
-
 st.title('Iris: Flower Classification & Prediction')
 image = Image.open('iris-flower.png')
 st.image(image)
+
+readme = st.checkbox("readme first")
+
+if readme:
+
+    st.write("""
+        This is a web app demo using [streamlit](https://streamlit.io/) library. It is hosted on [Streamlit](https://streamlit.io/). You may get the codes via [github](https://github.com/Tsuen86/iris-classification/)
+        """)
 
 st.sidebar.write("""
 This is a web app to predict the probably species of Iris flower based on its sepal and petal width
