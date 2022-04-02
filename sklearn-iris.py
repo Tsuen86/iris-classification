@@ -19,7 +19,7 @@ from sklearn.metrics import classification_report
 
 
 st.title('Iris: Flower Classification & Prediction')
-image = Image.open('iris-flower.png')
+image = Image.open('image.png')
 st.image(image, use_column_width=True,format='PNG')
 
 st.sidebar.write("""
