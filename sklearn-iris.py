@@ -19,8 +19,8 @@ from sklearn.metrics import classification_report
 
 
 st.title('Iris: Flower Classification & Prediction')
-image = Image.open('iris-flower.jpg')
-st.image(image, use_column_width=True,format='JPG')
+image = Image.open('iris-flower.png')
+st.image(image, use_column_width=True,format='PNG')
 
 st.sidebar.write("""
 This is a web app to predict the probably species of Iris flower based on its sepal and petal width
