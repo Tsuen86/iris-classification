@@ -27,7 +27,7 @@ readme = st.checkbox("README First")
 
 if readme:
 
-    st.sunheader.write("""
+    st.subheader.write("""
         This is a web app demo using [streamlit](https://streamlit.io/) library. It is hosted on [Streamlit](https://streamlit.io/). You may get the codes via [github](https://github.com/Tsuen86/iris-classification/)
         """)
 
