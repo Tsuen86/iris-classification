@@ -29,10 +29,6 @@ st.sidebar.write("""
 This is a web app to predict the probably species of Iris flower based on its sepal and petal width
 """)
 
-st.sidebar.write ("For more info, please contact:")
-
-st.sidebar.write("<a href='https://www.linkedin.com/in/huei-tsuen-lim-89225536/'>Lim Huei Tsuen </a>", unsafe_allow_html=True)
-
 st.sidebar.write("Please adjust slider values, to get Iris class prediction")
 
 SepalLengthCm = st.sidebar.slider('SepalLengthCm:', 2.0, 6.0)
@@ -52,6 +48,10 @@ st.subheader('Prediction Percentages:')
 st.write('**Probablity of Iris Class being Iris-setosa is ( in % )**:',pred_proba[0][0]*100)
 st.write('**Probablity of Isis Class being Iris-versicolor is ( in % )**:',pred_proba[0][1]*100)
 st.write('**Probablity of Isis Class being Iris-virginica ( in % )**:',pred_proba[0][2]*100)
+
+st.sidebar.write ("For more info, please contact:")
+
+st.sidebar.write("<a href='https://www.linkedin.com/in/huei-tsuen-lim-89225536/'>Lim Huei Tsuen </a>", unsafe_allow_html=True)
 
 # choice = st.sidebar.radio(
 #     "Choose a dataset",   
