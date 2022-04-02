@@ -44,11 +44,8 @@ features = pd.DataFrame(data, index=[0])
 
 pred_proba = model.predict_proba(features)
 
-a = pred_proba[0][0]*100
-format_a = "{:.2f}".format(a)
-
 st.subheader('Prediction Percentages:') 
-st.write('**Probablity of Iris Class being Iris-setosa is ( in % )**:',print(format_a))
+st.write('**Probablity of Iris Class being Iris-setosa is ( in % )**:',df.style.format("{:.2}"),pred_proba[0][0]*100)
 st.write('**Probablity of Isis Class being Iris-versicolor is ( in % )**:',pred_proba[0][1]*100)
 st.write('**Probablity of Isis Class being Iris-virginica ( in % )**:',pred_proba[0][2]*100)
 
