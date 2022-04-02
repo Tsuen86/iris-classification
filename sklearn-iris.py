@@ -16,6 +16,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 from sklearn.metrics import classification_report
 from PIL import Image
+model = pickle.load(open('IRIS-model.pkl', 'rb'))
 
 
 
