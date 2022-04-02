@@ -31,10 +31,10 @@ This is a web app to predict the probably species of Iris flower based on its se
 
 st.sidebar.write("Please adjust slider values, to get Iris class prediction")
 
-SepalLengthCm = st.sidebar.slider('SepalLengthCm:', 2.0, 6.0)
+SepalLengthCm = st.sidebar.slider('SepalLengthCm:', 2.0, 8.0)
 SepalWidthCm = st.sidebar.slider('SepalWidthCm:', 0.0, 5.0)
-PetalLengthCm = st.sidebar.slider('PetalLengthCm',0.0, 3.0)
-PetalWidthCm = st.sidebar.slider('PetalWidthCm:', 0.0, 2.0)
+PetalLengthCm = st.sidebar.slider('PetalLengthCm',0.0, 7.0)
+PetalWidthCm = st.sidebar.slider('PetalWidthCm:', 0.0, 2.5)
 data = {'SepalLengthCm': SepalLengthCm,
         'SepalWidthCm': SepalWidthCm,
         'PetalLengthCm': PetalLengthCm,
