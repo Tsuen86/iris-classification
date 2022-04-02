@@ -28,9 +28,10 @@ readme = st.checkbox("README First")
 if readme:
 
     st.write("""
-        Critical information for this web app demo are shown below:\n * Scikit Learn Model: Logistic Regression""")
-    st.write("* Host & Libraries: [Streamlit](https://streamlit.io/)")
-    st.write("* Code Repository: [Github](https://github.com/Tsuen86/iris-classification/")
+        Critical information for this web app demo are shown below:
+        \n * Scikit Learn Model: Logistic Regression
+        \n * Host & Libraries: [Streamlit](https://streamlit.io/)
+        \n * Code Repository: [Github](https://github.com/Tsuen86/iris-classification/""")
 
 st.sidebar.write("""
 This is a web app to predict the probably species of Iris flower based on its sepal and petal dimensions (length, width)
