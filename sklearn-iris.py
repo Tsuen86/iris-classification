@@ -35,7 +35,7 @@ if readme:
         """)
 
 st.sidebar.write("""
-This is a web app to predict the probably species of Iris flower based on its sepal and petal dimensions (length, width)
+This is a web app to predict the class species of an Iris flower based on its sepal and petal dimensions (length, width)
 """)
 
 st.sidebar.write("Please adjust slider values, to get Iris class prediction")
