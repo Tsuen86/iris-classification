@@ -19,7 +19,7 @@ from PIL import Image
 import pickle
 model = pickle.load(open('IRIS-model.pkl', 'rb'))
 
-st.title('Iris: Flower Classification & Prediction')
+st.title('Iris: Flower Class Prediction')
 image = Image.open('iris-flower.png')
 st.image(image)
 
@@ -51,7 +51,7 @@ features = pd.DataFrame(data, index=[0])
 pred_proba = model.predict_proba(features)
 
 st.subheader('Prediction Percentages:') 
-st.write('*Probablity of Iris Class being Iris-setosa is ( in % )*:',pred_proba[0][0]*100)
+st.write('**Probablity of Iris Class being Iris-setosa is ( in % )**:',pred_proba[0][0]*100)
 st.write('**Probablity of Isis Class being Iris-versicolor is ( in % )**:',pred_proba[0][1]*100)
 st.write('**Probablity of Isis Class being Iris-virginica ( in % )**:',pred_proba[0][2]*100)
 
